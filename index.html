@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <!-- i dont know why but this font unable to load specific font (400,600,700) -->
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: "Inter", sans-serif;
+    }
+
+    h1,
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --rem: 16px;
+      --content_width: 26.8vw;
+      --green: hsl(75, 94%, 57%);
+      --white: hsl(0, 0%, 100%);
+      --grey_700: hsl(0, 0%, 20%);
+      --grey_800: hsl(0, 0%, 12%);
+      --grey_900: hsl(0, 0%, 8%);
+    }
+
+    main {
+      width: 100%;
+      height: 100%;
+      background-color: var(--grey_900);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: var(--grey_800);
+      width: var(--content_width);
+    }
+
+    .img_box {
+      display: flex;
+      justify-content: center;
+    }
+
+    .card img {
+      width: 6vw;
+      height: 6vw;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-top: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .name {
+      font-size: 2rem;
+      color: var(--white);
+      font-weight: 700;
+      letter-spacing: .1rem;
+    }
+
+    .address {
+      display: block;
+      color: var(--green);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .position {
+      color: var(--white);
+      font-size: 0.875rem;
+    }
+
+    .socials {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .socials a {
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      color: var(--white);
+      background-color: var(--grey_700);
+      border-radius: .5rem;
+      padding: 1rem 0px;
+      width: 80%;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .socials a:last-child {
+      margin-bottom: 2rem;
+    }
+
+    .socials a:hover {
+      background-color: var(--green);
+      color: var(--grey_900);
+    }
+
+    @media (max-width: 1024px) {
+      :root {
+        --content_width: 50vw;
+      }
+    }
+
+    @media (max-width: 767px) {
+      :root {
+        --rem: 14px;
+        --content_width: 80vw;
+      }
+    }
+
+    @media (max-width: 375px) {
+      :root {
+        --rem: 12px;
+        --content_width: 90vw;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="card">
+      <div class="img_box">
+        <img src="assets/images/avatar-jessica.jpeg" alt="avatar">
+      </div>
+      <h1 class="name center">Jessica Randall</h1>
+      <span class="address center">London, United Kingdom</span>
+      <p class="position center">"Front-end developer and avir reader."</p>
+      <div class="socials">
+        <a href="#" class="social">GitHub</a>
+        <a href="#" class="social">Frontend Mentor</a>
+        <a href="#" class="social">Linkedin</a>
+        <a href="#" class="social">Twitter</a>
+        <a href="#" class="social">Instagram</a>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
